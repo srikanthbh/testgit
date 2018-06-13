@@ -20,7 +20,9 @@ import java.util.stream.Collectors;
 @RequestMapping("/management123")
 public class LogsResource {
 
+
     @GetMapping("/logs123")
+
 //Adding comments from Branch
     @GetMapping("/logs")
 
