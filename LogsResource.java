@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/management")
 public class LogsResource {
-
+//Adding comments from Branch
     @GetMapping("/logs")
     @Timed
     public List<LoggerVM> getList() {
