@@ -24,9 +24,10 @@ import java.util.*;
 
 /**
  * REST controller for managing the current user's account.
+ * Changed in branch
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api123")
 public class AccountResource {
 
     private final Logger log = LoggerFactory.getLogger(AccountResource.class);
@@ -43,7 +44,8 @@ public class AccountResource {
         this.userService = userService;
         this.mailService = mailService;
     }
-
+	//Dummy comment on branch
+    //one more comment on branch
     /**
      * POST  /register : register the user.
      *

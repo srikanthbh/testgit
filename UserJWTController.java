@@ -20,20 +20,24 @@ import javax.validation.Valid;
 
 /**
  * Controller to authenticate users.
+ * This is Srikanth test chaange
  */
 @RestController
 @RequestMapping("/api")
 public class UserJWTController {
 
-    private final TokenProvider tokenProvider;
+    private final TokenProvider tokenProvider123;
 
-    private final AuthenticationManager authenticationManager;
+    private final AuthenticationManager authenticationManager123;
+
+    //Dummy comment
 
     public UserJWTController(TokenProvider tokenProvider, AuthenticationManager authenticationManager) {
         this.tokenProvider = tokenProvider;
         this.authenticationManager = authenticationManager;
     }
 
+    //One more comment
     @PostMapping("/authenticate")
     @Timed
     public ResponseEntity<JWTToken> authorize(@Valid @RequestBody LoginVM loginVM) {
