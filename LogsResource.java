@@ -14,12 +14,13 @@ import java.util.stream.Collectors;
 
 /**
  * Controller for view and managing Log Level at runtime.
+ * Change on main branch
  */
 @RestController
-@RequestMapping("/management")
+@RequestMapping("/management123")
 public class LogsResource {
 
-    @GetMapping("/logs")
+    @GetMapping("/logs123")
     @Timed
     public List<LoggerVM> getList() {
         LoggerContext context = (LoggerContext) LoggerFactory.getILoggerFactory();
@@ -28,8 +29,10 @@ public class LogsResource {
             .map(LoggerVM::new)
             .collect(Collectors.toList());
     }
-
-    @PutMapping("/logs")
+    //Dummy comment on master
+    //one more comment
+    //two more comments
+    @PutMapping("/logs123")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @Timed
     public void changeLevel(@RequestBody LoggerVM jsonLogger) {
